@@ -1,11 +1,8 @@
 function [kdPole] = dipole2D(X)
-% Make 3D FFT of dipole for use with quantitative susceptibility
-% mapping.
 
 xx=X(1);
 yy=X(2);
 kdPole=zeros([xx yy]);
-
 
 for y=1:yy;
     for x=1:xx;
