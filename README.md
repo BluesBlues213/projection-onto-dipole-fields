@@ -7,6 +7,6 @@ Implementation of technique described in Liu et al. 2011. A novel background fie
 I used this technique to remove the background field in 2D gradient echo (GRE) phase images. 
 
 Input: mask of brain area in 2D, raw phase data with background field.
-Output: corrected phase, the field that was removed.
+Output: corrected phase result, the field that was removed.
 
-Example image shows the raw phase data, corrected phase, the field that was removed. 
+Example image shows the raw phase data, corrected phase result, the field that was removed. 
