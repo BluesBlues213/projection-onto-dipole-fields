@@ -1,5 +1,5 @@
 # Input & Output
-pdf_method.m , function [NPhase, J, R]=pdf_method(data,mask,N) 
+function [NPhase, J, R] = pdf_method(data,mask,N) 
 
 Outputs corrected phase image (NPhase), the estimated background field (J), and the conjugate gradient L2 norm residuals (R). Inputs of the raw phase data with artifact (data), mask of the image (mask) and number of iterations (N). 
 
