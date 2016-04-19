@@ -1,5 +1,9 @@
 # Input & Output
-pdf_method.m | function [NPhase, J, R]=pdf_method(data,mask,N) | Outputs corrected phase image (NPhase), the estimated background field (J), and the conjugate gradient L2 norm residuals (R). The function requires inputs of the raw phase data with artifact (data), mask of the image (mask) and number of iterations (N). 
+pdf_method.m 
+function [NPhase, J, R]=pdf_method(data,mask,N) 
+Outputs corrected phase image (NPhase), the estimated background field (J), and the conjugate gradient L2 norm residuals (R). 
+
+Inputs of the raw phase data with artifact (data), mask of the image (mask) and number of iterations (N). 
 
 # Result
 edf_total.png | Example result shows the raw phase image, the field which was estimated and then removed, the conjugate gradient convergence pattern with N=20, and the correct phase image. The data and mask files used in the example are in the file example_data. 
