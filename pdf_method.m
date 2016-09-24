@@ -28,7 +28,7 @@ for i=1:N;
     alpha=(z0_ip)/(Ad_ip);
     x=x+alpha*d;
     r=r-alpha*Ad;
-    s=Mn.*fftshift(ifftn(ifftshift(c.*fftshift(fftn(ifftshift(.*W.*r)))))); 
+    s=Mn.*fftshift(ifftn(ifftshift(c.*fftshift(fftn(ifftshift(mask.*W.*r)))))); 
     
     z0_new_ip=sum(reshape(conj(s).*s,[numel(data) 1]));
     beta=(z0_new_ip)/(z0_ip);
